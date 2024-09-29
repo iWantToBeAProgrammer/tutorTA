@@ -1,0 +1,79 @@
+:root {
+    --primary: #406F73;
+    --secondary: #79D1D9;
+    --neutral: #D2A4B0;
+    --accent: #FFDCE5;
+}
+
+body {
+    font-family: "Josefin Sans";
+}
+
+.navbar {
+    box-shadow: 0px -4px 4px 0px rgba(64, 111, 115, 0.4) inset;
+}
+
+
+.container-xxl {
+    margin-top: 7rem;
+}
+
+.about-wrapper {
+    gap: 8rem;
+}
+
+.about-title {
+    letter-spacing: .5rem;
+}
+
+.about-desc {
+    text-align: justify;
+}
+
+.hero-button {
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+
+}
+
+.type-image {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card {
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+#reservation {
+    background-color: #e4e4e4;
+}
+
+.reservation-form {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.reservation-button {
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    
+}
+
+.menu-card-content button {
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    color: white;
+    font-weight: 500;
+}
+
+#contact {
+    margin: 12rem 0;
+}
+
+.contact-button {
+    background: linear-gradient(to bottom, var(--neutral), var(--accent));
+}
