@@ -20,7 +20,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg border-bottom border-2 border-opacity-100"
+      class="navbar navbar-expand-lg sticky-top"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -67,83 +67,83 @@
 
     <div class="container-xxl">
       <section class="hero">
-        <div class="hero-wrapper d-flex">
+        <div class="hero-wrapper d-flex flex-md-row flex-column gap-md-0 gap-5">
           <img src="/assets/img_home.png" alt="home" />
 
-          <div class="hero-content text-end">
-            <h1 class="hero-title text-uppercase fw-bold fs-2">
+          <div class="hero-content text-md-end text-center px-md-0 px-2">
+            <h1 class="hero-title text-uppercase fw-bold fs-md-2 fs-4">
               Moments in every cup
             </h1>
 
-            <p class="hero-desc fs-5 fw-semibold">
+            <p class="hero-desc fs-md-5 fw-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
               aliquid magnam repellendus maiores vero adipisci?
             </p>
 
             <button
-              class="hero-button btn btn-light text-white fs-5 border-3 border-black border-opacity-50 gap-3 fw-semibold rounded-pill px-4 py-2"
+              class="hero-button btn text-white fs-5 border-3 border-black border-opacity-50 gap-3 fw-semibold rounded-pill px-md-4 py-md-2"
             >
               Explore <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </button>
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="about-wrapper d-flex align-items-center">
+      <section class="about mt-5" id="about">
+        <div class="about-wrapper d-flex align-items-center flex-md-row flex-column-reverse">
           <div class="about-content">
             <h1 class="about-title text-center text-uppercase fw-bolder mb-4">
               About
             </h1>
-            <p class="about-desc fs-4 fw-semibold">
+            <p class="about-desc fs-md-4 px-md-0 px-5 fw-semibold">
               Diens didesain khusus untuk generasi milenial yang dinamis dan
               kreatif. Dengan ruang yang luas yang dominasi warna putih, Diens
               menciptakan suasana nyaman dan modern yang sempurna untuk bekerja,
               bersantai, atau sekadar menikmati secangkir kopi terbaik.
             </p>
           </div>
-          <img src="/assets/img_about.png" alt="about-img" />
+          <img src="/assets/img_about.png" alt="about-img" class="w-md-100 w-75"/>
         </div>
       </section>
 
       <section id="menu" class="mt-5">
-        <div class="menu-wrapper d-flex flex-column align-items-center">
+        <div class="menu-wrapper d-flex flex-column align-items-center ">
           <h1 class="menu-title text-uppercase mb-5 fs-1 fw-bold">Menu</h1>
-          <div class="menu-type d-flex justify-content-center gap-5">
+          <div class="menu-type d-flex  gap-md-5 gap-2">
             <div
               class="menu-type-card d-flex flex-column gap-2 align-items-center"
             >
-              <div class="type-image shadow-lg">
-                <img src="/assets/menu_1.png" alt="hot drinks" />
+              <div class="type-image-wrapper shadow-lg">
+                <img src="/assets/menu_1.png" alt="hot drinks" class="type-image"/>
               </div>
-              <p class="fw-semibold fs-5">Hot Drinks</p>
+              <p class="fw-semibold fs-md-5">Hot Drinks</p>
             </div>
             <div
               class="menu-type-card d-flex flex-column gap-2 align-items-center"
             >
-              <div class="type-image shadow-lg">
-                <img src="/assets/menu_2.png" alt="cold drinks" />
+              <div class="type-image-wrapper shadow-lg">
+                <img src="/assets/menu_2.png" alt="cold drinks" class="type-image"/>
               </div>
-              <p class="fw-semibold fs-5">Cold Drinks</p>
+              <p class="fw-semibold fs-md-5">Cold Drinks</p>
             </div>
             <div
               class="menu-type-card d-flex flex-column gap-2 align-items-center"
             >
-              <div class="type-image shadow-lg">
-                <img src="/assets/menu_3.png" alt="signature" />
+              <div class="type-image-wrapper shadow-lg">
+                <img src="/assets/menu_3.png" alt="signature" class="type-image"/>
               </div>
-              <p class="fw-semibold fs-5">Signature</p>
+              <p class="fw-semibold fs-md-5">Signature</p>
             </div>
             <div
               class="menu-type-card d-flex flex-column gap-2 align-items-center"
             >
-              <div class="type-image shadow-lg">
-                <img src="/assets/menu_4.png" alt="fresh juice" />
+              <div class="type-image-wrapper shadow-lg">
+                <img src="/assets/menu_4.png" alt="fresh juice" class="type-image"/>
               </div>
-              <p class="fw-semibold fs-5">Fresh Juice</p>
+              <p class="fw-semibold fs-md-5">Fresh Juice</p>
             </div>
           </div>
           <div
-            class="menu-card-wrapper mt-5 d-flex gap-4 flex-wrap align-items-center justify-content-center"
+            class="menu-card-wrapper mt-5 row row-cols-md-6 row-cols-3 gap-5 justify-content-center"
           >
             <div
               class="menu-card py-3 d-flex flex-column align-items-center shadow-lg"
@@ -271,9 +271,9 @@
       </section>
 
       <section id="reservation" class="mt-5 py-5 w-100 rounded-4">
-        <div class="reservation-wrapper d-flex flex-column align-items-center w-75 m-auto">
+        <div class="reservation-wrapper d-flex flex-column align-items-center w-auto px-md-5 px-2 m-auto">
           <h1
-            class="reservation-title fs-1 fw-bold mb-5 text-center text-uppercase"
+            class="reservation-title fs-1 fw-bold mb-md-5 mb-3 text-center text-uppercase"
           >
             Reservation
           </h1>
@@ -282,7 +282,7 @@
               <label for="exampleFormControlInput1" class="form-label"
                 >Nama</label
               >
-              <div class="nama-form-wrapper d-flex gap-5">
+              <div class="nama-form-wrapper d-flex gap-md-5 gap-1">
                 <input
                   type="text"
                   class="form-control shadow-lg"
@@ -298,7 +298,7 @@
               </div>
             </div>
             <div class="email-form mb-3">
-              <div class="email-form-wrapper d-flex gap-5">
+              <div class="email-form-wrapper d-flex gap-md-5 gap-1">
                 <div class="w-100">
                   <label for="exampleFormControlInput1" class="form-label"
                     >Email</label
@@ -324,7 +324,7 @@
               </div>
             </div>
             <div class="datetime-form mb-3">
-              <div class="datetime-form-wrapper d-flex gap-5">
+              <div class="datetime-form-wrapper d-flex gap-md-5 gap-1">
                 <div class="w-100">
                   <label for="exampleFormControlInput1" class="form-label"
                     >Tanggal Reservasi</label
@@ -350,7 +350,7 @@
               </div>
             </div>
             <div class="total-form mb-3">
-              <div class="total-form-wrapper d-flex gap-5">
+              <div class="total-form-wrapper d-flex gap-md-5 gap-1">
                 <div class="w-100">
                   <label for="exampleFormControlInput1" class="form-label"
                     >Untuk Berapa Orang?</label
@@ -365,7 +365,7 @@
               </div>
             </div>
             <div class="note-form mb-5">
-              <div class="note-form-wrapper d-flex gap-5">
+              <div class="note-form-wrapper d-flex gap-md-5 gap-1">
                 <div class="w-100">
                   <label for="note" class="form-label"
                     >Catatan</label
@@ -379,12 +379,12 @@
         </div>
       </section>
       <section id="contact">
-        <div class="contact-wrapper d-flex gap-5">
+        <div class="contact-wrapper d-flex gap-5 flex-md-row flex-column">
           <img src="/assets/img_contact.png" alt="contact image">
-          <div class="contact-content text-end">
-            <h1 class="contact-title fs-1 fw-bold mb-4 text-uppercase">Contact us</h1>
-            <p class="contact-desc fs-4 fw-semibold mb-4">Ada pertanyaan atau ingin berbagi pendapat? <br><span>Silahkan hubungi kami!</span></p>
-            <button class="contact-button border-2 border-black rounded-pill btn btn-lg text-white fw-bold">Contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <div class="contact-content text-md-end text-center">
+            <h1 class="contact-title fs-md-1 fs-3 fw-bold mb-md-4 mb-1 text-uppercase">Contact us</h1>
+            <p class="contact-desc fw-semibold mb-4">Ada pertanyaan atau ingin berbagi pendapat? <br><span>Silahkan hubungi kami!</span></p>
+            <button class="contact-button border-2 border-black rounded-pill btn text-white fw-bold">Contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
           </div>
         </div>
       </section>
@@ -465,6 +465,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/e0370d2813.js"
       crossorigin="anonymous"
