@@ -64,12 +64,11 @@ body {
 }
 
 .menu-card img {
-  width: 8rem;
-  height: 12rem;
+  width: 50%
 }
 
 .menu-card h3, .menu-card p, .menu-card button {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
 
 #reservation {
