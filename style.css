@@ -11,7 +11,18 @@ body {
 
 .navbar-active {
     box-shadow: 0px -4px 4px 0px rgba(64, 111, 115, 0.4) inset;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+}
+
+.nav-item:hover {
+    background-color: var(--neutral);
+   
+}
+
+.nav-item {
+    padding: 0 .75rem;
+    transition: all .3s ease-in-out;
+    border-radius: .5rem;
 }
 
 
@@ -51,7 +62,7 @@ body {
 }
 
 .type-image img{
-    width: 60%;
+    width: 100%;
 }
 
 .menu-type-card p {
@@ -64,11 +75,11 @@ body {
 }
 
 .menu-card img {
-  width: 50%
+  width: 75%
 }
 
 .menu-card h3, .menu-card p, .menu-card button {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
 }
 
 #reservation {
@@ -142,6 +153,12 @@ body {
         letter-spacing: .2rem;
         font-weight: 600;
         font-size: 1.5rem;
+    }
+
+    .nav-item {
+        border-radius: 2rem;
+        padding: 0 .75rem;
+        transition: all .3s ease-in-out;
     }
 
     .contact-button {
